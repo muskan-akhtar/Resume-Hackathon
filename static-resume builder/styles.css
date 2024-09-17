@@ -1,0 +1,82 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1deeb;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.resume-form {
+    background: #b383d3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.resume-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.resume-form input,
+.resume-form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+
+.resume-form #profile-image {
+    margin-bottom: 10px;
+    height: 2in;
+    width: 2in;
+}
+
+.resume-output {
+    margin-top: 20px;
+    padding: 20px;
+    background: #deaaee;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-output img {
+    width: 2in;
+    height: 2in;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    display: block;
+    margin: 10px 0;
+    object-fit: cover;
+}
+
+#toggle-button {
+    padding: 10px 20px;
+    border: none;
+    background: #ce77e4;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#toggle-button:hover {
+    background: #76158f;
+}
