@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shareable Resume Builder</h1>
+
+        <h3><b>NOTE:</b></h3>
+        <h5>*If you want to change something in your resume data then just go to that section and change which data you want to change and then again click the generate resume-button.*</h5>
+        
+        <div class="resume-form">
+            <label for="section-select">Select each section from here to modify your resume:</label>
+            <select id="section-select">
+                <option value="personal-info">Personal Info</option>
+                <option value="education">Education</option>
+                <option value="experience">Experience</option>
+                <option value="skills">Skills</option>
+                <option value="image">Profile Image</option>
+            </select>
+            
+            <div id="personal-info" class="resume-section">
+                <h2>Personal Information</h2>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone" required>
+            </div>
+            
+            <div id="education" class="resume-section">
+                <h2>Education</h2>
+                <label for="education-type">Type:</label>
+                <select id="education-type">
+                    <option value="University">University</option>
+                    <option value="College">College</option>
+                </select>
+                <input type="text" id="degree" placeholder="Degree">
+                <input type="text" id="university" placeholder="Institution Name">
+                <input type="text" id="year" placeholder="Year">
+            </div>
+            
+            <div id="experience" class="resume-section">
+                <h2>Experience</h2>
+                <input type="text" id="job-title" placeholder="Job Title">
+                <input type="text" id="company" placeholder="Company">
+                <input type="text" id="years" placeholder="Years">
+            </div>
+            
+            <div id="skills" class="resume-section">
+                <h2>Skills</h2>
+                <input type="text" id="skills-list" placeholder="Skills (comma-separated)">
+            </div>
+            
+            <div id="image" class="resume-section">
+                <h2>Profile Image</h2>
+                <input type="file" id="profile-image" accept="image/*">
+            </div>
+            <button id="download-pdf-button">Download PDF</button>
+            <button id="generate-button">Generate Resume</button>
+        </div>
+        
+        <div id="resume-output" class="resume-output" contenteditable="true">
+            <h1>"Generated Resume"</h1>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
